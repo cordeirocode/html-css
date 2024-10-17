@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/som-teste.mp3" controls autoplay></audio>
+    <!--formatos de áudio: MP3 / OGG / WAV (MUITO PESADO, EVITAR USAR!)-->
+
+    <h1>Reproduzindo tipos diferentes de formato de Áudio (caso o navegador não rode o padrão)</h1>
+    <p>Vamos aprender a reproduzir outros formatos de áudios em HTML5</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source scr="midia/som-teste.mp3" type="audio/mpeg">
+        <source scr="midia/som-teste.ogg" type="audio/ogg">
+        <source scr="midia/som-teste/wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir aúdio. <a href="midia/som-teste.mp3">Clique aqui para baixar o arquivo mp3</a></p>
+    </audio>
+</body>
+</html>
