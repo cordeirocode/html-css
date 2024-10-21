@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: rgb(81, 81, 81);
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky; /* CONFIG CABEÇALHO FIXO*/
+            top: -1px;
+            background-color: rgb(81, 81, 81);
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray; /* CONFIG EFEITO ZEBRADO (2n) / (2n-1) / (odd) - impar / (even) - par  */
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas grandes</h1>
+    <!--
+        ANATOMIA TABELAS GRANDES:
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.947.034</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">60.482.356</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">22.236.665</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">67.433.231</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">50.765.458</td>
+            </tr>
+            <tr>
+                <td>Pernanbuco</td>
+                <td class="num">43.235.478</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.234.987</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">23.934.576</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.234.987</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.234.987</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.234.987</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.234.987</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.234.987</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.234.987</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.234.987</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.234.987</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.234.987</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.234.987</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.234.987</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.234.987</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.234.987</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num"><strong>451.348.962</strong></td>
+        </tfoot>
+    </table>
+</body>
+</html>
