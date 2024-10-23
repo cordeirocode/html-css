@@ -2,6 +2,90 @@
 
 /* Todas as demais versões */
 
+/*
+
+Typical Device Breakpoints atuais:
+----------------------------------
+Pequenas telas: até 600px
+Celulares: Até 600px a 768px
+Tablets (paisagem): 768px a 992px
+Desktops: 992px a 1200px
+Televisões e grandes monitores: Acima de 1200px
+Grandes Telas: acima de 1200px
+----------------------------------
+*/
+
 @media print {
+    body {
+        background-image: url(../imagens/back-print.jpg);  /* DESNECESSÁRIO POIS N IMPRIME BACKGROUND */
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa versão de impressão foi desenvolvida por João Paulo Cordeiro';
+    }
     
+    main h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: block; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) { /* TABLET */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    main {
+        width: 500px;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: block; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main {
+        width: 600px;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: block; }
+    img#tv { display: none; }
+}
+
+@media screen and (min-width: 1200px) { /* GRANDES TELAS */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 800px;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: block; }
 }
