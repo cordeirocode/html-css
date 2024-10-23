@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-/* CONFIG DE MODO RETRATO (APARELHO EM PÉ) */
+/* DECLARAÇÕES DE MODO RETRATO (APARELHO EM PÉ) */
 
 body {
     background: url(../imagens/cev-portrait.jpg);
     background-color: center bottom;
-}
+} 
