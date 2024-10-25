@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex; /* PROPRIEDADE FLEX BOX */
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto; /* PROPRIEDADE FLEX BOX */
+        }
+
+        div.teste {
+            background-color: lightsalmon;
+        }
+
+        div.teste2 {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">B</div>
+    </div>
+    <div class="teste">
+        <div class="teste2">A</div>
+        <div class="teste2">B</div>
+        <div class="teste2">C</div>
+        <div class="teste2">D</div>
+        <div class="teste2">E</div>
+        <div class="teste2">F</div>
+        <div class="teste2">B</div>
+    </div>
+</body>
+</html>
